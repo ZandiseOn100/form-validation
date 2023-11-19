@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container"></div>
+        <form action="/submit-projects" method="post" class="toggle-form" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="projectname">Project Name</label>
+                <input type="text" name="project_name" placeholder="Enter project name" class="error">
+                <span class="error-message"  id="projectNameError"></span> 
+            </div>
+            <div class="form-group">
+                <label for="projectmanager">Project Manager</label>
+                <input type="text" name="project_manager" placeholder="Enter project manager name" class="error">
+                <span class="error-message" id="projectManagerError"></span>
+            </div>
+            <div class="form-group">
+                <label for="projectstartdate">Project Start Date</label>
+                <input type="date" name="project_start_date" placeholder="Enter project start date"  class="error">
+                <span class="error-message" id="projectStartDateError"></span>
+            </div>                                  <div class="form-group">
+                <label for="projectenddate">Project End Date</label>
+                <input type="date" name="project_end_date" placeholder="Enter project end date" class="error">
+                <span class="error-message" id="projectEndDateError"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit"> Add Project</button>
+            </div>         
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
